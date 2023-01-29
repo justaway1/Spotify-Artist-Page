@@ -11,6 +11,7 @@
     --main-color: rgba(235, 227, 227, 0.844);
     --fade-color: rgba(235, 227, 227, 0.574);
     --bg-color: rgba(0, 0, 0, 0.821);
+    --spotify-color: #1DB954;
 }
 
 html {
@@ -52,6 +53,7 @@ img {
     justify-content: space-between;
     align-items: center;
     background-color: var(--bg-color);
+    box-shadow: 0 1px 2px rgb(48, 47, 47);
 }
 
 .pointer_input_field {
@@ -125,7 +127,7 @@ img {
 
 .custom_collapse {
     color: var(--main-color);
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     text-decoration: none;
     letter-spacing: 0.1rem;
 }
@@ -136,21 +138,29 @@ img {
 
 .custom_collapse_content {
     color: var(--main-color);
+}
+
+.custom_collapse_content i {
     font-size: 1.2rem;
 }
 
-
 .custom_collapse_content p {
     margin: 0 0 0 4px;
-    padding: 10px;
+    padding: 7px;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
 
-.browse_div,
-.activity_div,
-.radio_div {
+.custom_nav_navigation {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
+}
+
+.custom_nav_navigation:hover { 
+    border-right: 3px solid var(--spotify-color);
+    color: white;
+    cursor: pointer;
 }

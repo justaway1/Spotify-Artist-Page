@@ -79,7 +79,6 @@
                                             href="#">Log Out</a>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -91,28 +90,59 @@
         <!-- START OF SIDE NAV -->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2 bg-dark">
-                    <p>
+                <div class="col-md-2 bg-dark p-4">
+                    <!-- FIRST COLLAPSE -->
+                    <p class="mb-1">
                         <a class="custom_collapse" data-bs-toggle="collapse"
-                            href="#contentId"
-                            aria-expanded="true" aria-controls="contentId">
+                            href="#firstCollapse"
+                            aria-expanded="true" aria-controls="firstCollapse">
                             MAIN <i class="fa-solid fa-chevron-down
                                 collapsed_arrow"></i>
                         </a>
 
                     </p>
-                    <div class="collapse custom_collapse_content" id="contentId">
-                        <div class="browse_div">
+                    <div class="collapse custom_collapse_content"
+                        id="firstCollapse">
+                        <div class="custom_nav_navigation">
                             <span><i class="fa-solid fa-folder-open"></i></span>
                             <p class="custom_main_links">Browse</p>
                         </div>
-                        <div class="activity_div">
+                        <div class="custom_nav_navigation">
                             <i class="fa-solid fa-user-group"></i>
                             <p class="custom_main_links">Activity</p>
                         </div>
-                        <div class="radio_div">
+                        <div class="custom_nav_navigation">
                             <i class="fa-solid fa-tower-broadcast"></i>
                             <p class="custom_main_links">Radio</p>
+                        </div>
+                    </div>
+                    <!-- SECOND COLLAPSE -->
+                    <p class="mb-1 mt-4">
+                        <a class="custom_collapse" data-bs-toggle="collapse"
+                            href="#secondCollapse"
+                            aria-expanded="true" aria-controls="secondCollapse">
+                            YOUR MUSIC <i class="fa-solid fa-chevron-down
+                                collapsed_arrow"></i>
+                        </a>
+
+                    </p>
+                    <div class="collapse custom_collapse_content"
+                        id="secondCollapse">
+                        <div class="custom_nav_navigation">
+                        <i class="fa-solid fa-headphones"></i>
+                            <p class="custom_main_links">Songs</p>
+                        </div>
+                        <div class="custom_nav_navigation">
+                            <i class="fa-brands fa-itunes-note"></i>
+                            <p class="custom_main_links">Albums</p>
+                        </div>
+                        <div class="custom_nav_navigation">
+                            <i class="fa-solid fa-user"></i>
+                            <p class="custom_main_links">Artists</p>
+                        </div>
+                        <div class="custom_nav_navigation">
+                            <i class="fa-regular fa-file"></i>
+                            <p class="custom_main_links">Local Files</p>
                         </div>
                     </div>
                 </div>
