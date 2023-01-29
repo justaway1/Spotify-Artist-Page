@@ -14,9 +14,23 @@
     --spotify-color: #1DB954;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(95, 93, 93, 0.551);
+    border-radius: 10px;
+}
+
 html {
     font-size: 62.5%;
 }
+
 
 
 body {
@@ -157,26 +171,28 @@ img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-right: 20px;
 
 }
 
-.custom_nav_navigation:hover { 
+.custom_nav_navigation:hover {
     border-right: 3px solid var(--spotify-color);
     color: white;
+    
     cursor: pointer;
 }
 
 .new_playlist {
     position: relative;
-    z-index: 2;
+    z-index: 4;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
     padding: 20px 20px 20px 0;
     color: var(--main-color);
     border-top: 1.5px solid black;
     border-bottom: 1.5px solid black;
+
 
 }
 
@@ -200,7 +216,49 @@ img {
 }
 
 .custom_collapse_column {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 82vh;
+}
+
+.custom_collapse_container {
+    position: relative;
+    overflow-y: auto;
+    z-index: 0;
+}
+
+
+.image_author_song {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-color);
+    border-bottom: 1.5px solid black;
+}
+
+.custom_charlie_image {
+    width: 50px;
+    height: 50px;
+}
+
+.author_song {
+    font-size: 1.3rem;
+    margin-left: -15px;
+
+}
+
+.author_song p {
+    margin-bottom: 1px;
+    font-weight: 500;
+}
+
+.author_song p:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.check {
+    font-size: 1.4rem;
 }
