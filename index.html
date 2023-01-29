@@ -28,39 +28,61 @@
 
         <!-- BOOTSTRAP JS -->
         <script
-            src="./js/bootstrap.js"></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-            integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-            crossorigin="anonymous"></script>
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="./js/bootstrap.js"></script>
         <title>Spotify Page</title>
     </head>
     <body>
         <!-- HEADER START -->
         <header>
-            <div class="container-fluid overflow-hidden">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 g-0">
-                        <div class="header_info bg-danger p-3">
+                        <div class="header_info p-4">
                             <div class="pointer_input_field">
-                                <i class="fa-solid fa-chevron-left text-white fs-2 ms-2"></i>
-                                <i class="fa-solid fa-chevron-right text-light fs-2 ms-3 me-5"></i>
+                                <i class="fa-solid fa-chevron-left fs-2 ms-2
+                                    me-3 custom_arrow_left"></i>
+                                <i class="fa-solid fa-chevron-right fs-2 ms-3
+                                    me-5 custom_arrow_right"></i>
                                 <div class='input_fields'>
                                     <i class="fa-solid fa-magnifying-glass"></i>
-                                    <input type="text" class="custom_input_field" placeholder="Search">
+                                    <input type="text"
+                                        class="custom_input_field"
+                                        placeholder="Search">
                                 </div>
                             </div>
                             <div class="person_information">
-                                <i class="fa-solid fa-bell"></i>
-                                <i class="fa-solid fa-cloud-arrow-down"></i>
-                                <img src="./images/Неозаглавен дизайн.png" alt="profile_picture" class="img-fluid profile_picture">
-                                <p class="person_profile">Stan Angelov</p>
+                                <i class="fa-solid fa-bell custom_person_icon"></i>
+                                <i class="fa-solid fa-cloud-arrow-down
+                                    custom_person_icon"></i>
+                                <img src="./images/Неозаглавен дизайн.png"
+                                    alt="profile_picture" class="img-fluid
+                                    profile_picture">
+                                <p class="person_profile mb-0 me-5">Stan Angelov</p>
+
+                                <div class="dropdown">
+                                    <button class="btn border-0" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                                <i class="fa-solid fa-chevron-down custom_dropdown_arrow"></i>
+                                            </button>
+                                    <div class="dropdown-menu mt-1 custom_dropdown" aria-labelledby="triggerId">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item disabled" href="#">Disabled action</a>
+                                        <h6 class="dropdown-header">Section header</h6>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">After divider action</a>
+                                    </div>
+                                </div>
+
                             </div>
+                            <!-- END OF HEADER SECTION -->
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-
     </body>
 </html>

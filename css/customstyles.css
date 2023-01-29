@@ -7,6 +7,12 @@
     font-family: 'Fira Code', monospace;
 }
 
+:root {
+    --main-color: rgba(235, 227, 227, 0.844);
+    --fade-color: rgba(235, 227, 227, 0.574);
+    --bg-color: rgba(0, 0, 0, 0.821);
+}
+
 html {
     font-size: 62.5%;
 }
@@ -16,8 +22,8 @@ body {
     font-size: 1.6rem;
 }
 
-.custom-css {
-    font-size: 3rem;
+.custom_container_header {
+    position: fixed;
 }
 
 a {
@@ -41,6 +47,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--bg-color);
 }
 
 .pointer_input_field {
@@ -59,11 +66,55 @@ img {
 .custom_input_field {
     border-radius: 50px;
     outline: none;
-    padding: 4px 25px;
+    padding: 2.5px 25px;
     align-items: center;
     border: none;
 }
 
 .custom_input_field[type='text'] {
     font-size: 1.2rem;
+}
+
+.person_information {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.custom_arrow_left {
+    color: var(--main-color);
+}
+
+.custom_arrow_right {
+    color: var(--fade-color);
+}
+
+.custom_person_icon {
+    color: var(--main-color);
+    font-size: 1.7rem;
+    margin-right: 30px;
+}
+
+.person_profile {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    margin-left: 4px;
+    letter-spacing: -0.08rem;
+}
+
+.custom_person_icon:hover,
+.custom_arrow_left:hover {
+    color: white;
+}
+
+.custom_menu_dropdown{
+    position: absolute;
+    background-color: black;
+    color: white;
+}
+
+.custom_dropdown_arrow {
+    color: var(--main-color);
+    font-size: 2.1rem;
 }
