@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Fira Code', monospace;
+    font-family: 'Raleway', sans-serif;
 }
 
 :root {
@@ -118,3 +118,39 @@ img {
     font-size: 2rem;
 }
 
+
+/* END OF THE HEADER SECTION */
+
+/* START OF MAIN SECTION */
+
+.custom_collapse {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+}
+
+.collapsed_arrow {
+    font-size: 1.2rem;
+}
+
+.custom_collapse_content {
+    color: var(--main-color);
+    font-size: 1.2rem;
+}
+
+
+.custom_collapse_content p {
+    margin: 0 0 0 4px;
+    padding: 10px;
+}
+
+
+.browse_div,
+.activity_div,
+.radio_div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
