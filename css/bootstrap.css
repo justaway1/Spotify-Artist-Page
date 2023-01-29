@@ -3616,7 +3616,7 @@ textarea.form-control-lg {
   padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
   clear: both;
   font-weight: 400;
-  color: var(--bs-dropdown-link-color);
+  color: rgba(235, 227, 227, 0.844);
   text-align: inherit;
   text-decoration: none;
   white-space: nowrap;
@@ -8579,7 +8579,7 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(0, 0, 0, 0.821) !important;
 }
 
 .bg-black {

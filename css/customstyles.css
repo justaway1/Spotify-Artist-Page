@@ -35,6 +35,10 @@ img {
     object-fit: cover;
 }
 
+.bg-dark {
+    background-color: var(--bg-color);
+}
+
 /* START OF HEADER SECTION */
 
 .profile_picture {
@@ -98,23 +102,19 @@ img {
 
 .person_profile {
     color: var(--main-color);
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin-left: 4px;
     letter-spacing: -0.08rem;
 }
 
 .custom_person_icon:hover,
-.custom_arrow_left:hover {
-    color: white;
-}
-
-.custom_menu_dropdown{
-    position: absolute;
-    background-color: black;
+.custom_arrow_left:hover,
+.custom_dropdown_arrow:hover {
     color: white;
 }
 
 .custom_dropdown_arrow {
     color: var(--main-color);
-    font-size: 2.1rem;
+    font-size: 2rem;
 }
+
