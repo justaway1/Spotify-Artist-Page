@@ -63,6 +63,8 @@ img {
 }
 
 .header_info {
+    position: relative;
+    z-index: 5;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -261,4 +263,34 @@ img {
 
 .check {
     font-size: 1.4rem;
+}
+
+/* START OF MAIN SECTION */
+
+/* .custom_background_image_artist {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+} */
+
+.custom_artist_bg_image {
+    position: absolute;
+    filter: brightness(20%);
+
+}
+
+.custom_geazy_image {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 100%;
+}
+
+.custom_author_info {
+    position: absolute;
+    top: 120px;
+    margin-left: 20px;
+
 }
