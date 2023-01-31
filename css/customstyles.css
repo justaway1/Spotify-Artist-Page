@@ -276,6 +276,11 @@ img {
     color: white;
 } */
 
+.custom_artist_column {
+    position: relative;
+    overflow-y: auto;
+}
+
 .custom_artist_bg_image {
     position: absolute;
     z-index: -1;
@@ -377,6 +382,7 @@ img {
     border: 1px solid white;
     cursor: pointer;
 }
+
 
 .artist_dots {
     margin-top: 10px;
