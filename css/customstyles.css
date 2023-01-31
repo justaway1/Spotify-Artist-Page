@@ -15,7 +15,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -291,17 +291,23 @@ img {
     color: white;
 }
 
-.montly_listeners {
-    position: absolute;
-    right: 0;
-    top: 150px;
-    color: white;
-}
+
 
 .custom_geazy_image {
+    position: relative;
     max-width: 150px;
     max-height: 150px;
     border-radius: 100%;
+}
+
+.custom_profile_check {
+    position: absolute;
+    bottom: 4%;
+    left: 26.5%;
+    background-color: rgb(19, 144, 217);
+    color: white;
+    padding: 5px;
+    border-radius: 50px;
 }
 
 .custom_author_info {
@@ -314,7 +320,7 @@ img {
 }
 
 .geazy_info {
-    margin-top: 30px;
+    margin-top: 45px;
     margin-left: 18px;
 }
 
@@ -378,18 +384,38 @@ img {
     border-radius: 50px;
     border: 1px solid var(--main-color);
     background-color: transparent;
+    align-items: center;
+    padding: 3px 5px 6px 7px;
 
 }
 
 .artist_dots span {
     color: var(--main-color);
     font-weight: 900;
-    margin: 0;
-    padding: 5.5px;
-    display: flex;
-    font-size: 1.1rem;
-    vertical-align: middle;
-    align-items: center;
-    justify-content: center;
+    font-size: 1.2rem;
     letter-spacing: 0.2rem;
+}
+
+
+.montly_listeners {
+    position: absolute;
+    right: 15px;
+    top: 222px;
+    color: var(--main-color);
+    text-align: right;
+    font-weight: 400;
+}
+
+.montly_listeners p:first-child {
+    font-size: 1.7rem;
+    margin: 0;
+    font-style: normal;
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: -0.05rem;
+}
+
+.montly_listeners p:last-child {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
 }
