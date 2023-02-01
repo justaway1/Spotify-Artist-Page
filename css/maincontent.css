@@ -144,6 +144,7 @@
 
 .custom_track p:nth-last-of-type(2) {
     margin-right: 160px;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -155,6 +156,7 @@
 }
 
 .custom_track span {
+    margin: 0 auto;
     font-size: 1rem;
     border: 1px solid rgba(75, 74, 74, 0.744);
     border-radius: 3px;
