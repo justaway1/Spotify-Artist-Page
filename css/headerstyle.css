@@ -279,11 +279,12 @@ img {
 .custom_artist_column {
     position: relative;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .custom_artist_bg_image {
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     filter: brightness(20%);
 
 }
