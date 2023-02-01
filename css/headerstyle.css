@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* GLOBAL STYLES */
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
@@ -47,7 +55,8 @@ a {
 
 img {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .bg-dark {
@@ -65,18 +74,31 @@ img {
 .header_info {
     position: relative;
     z-index: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: var(--bg-color);
-    box-shadow: 0 1px 2px rgb(48, 47, 47);
+    -webkit-box-shadow: 0 1px 2px rgb(48, 47, 47);
+            box-shadow: 0 1px 2px rgb(48, 47, 47);
 }
 
 .pointer_input_field {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .input_fields i {
@@ -90,7 +112,9 @@ img {
     border-radius: 50px;
     outline: none;
     padding: 2.5px 25px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: none;
 }
 
@@ -99,9 +123,15 @@ img {
 }
 
 .person_information {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: 20px;
 }
 
@@ -170,9 +200,15 @@ img {
 
 
 .custom_nav_navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: 20px;
 
 }
@@ -187,9 +223,15 @@ img {
 .new_playlist {
     position: relative;
     z-index: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 20px 20px 20px 0;
     color: var(--main-color);
     border-top: 1.5px solid black;
@@ -219,9 +261,16 @@ img {
 
 .custom_collapse_column {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 82vh;
 }
 
@@ -233,9 +282,15 @@ img {
 
 
 .image_author_song {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: var(--main-color);
     border-bottom: 1.5px solid black;
 }
@@ -285,15 +340,23 @@ img {
 .custom_artist_bg_image {
     position: absolute;
     z-index: 0;
-    filter: brightness(20%);
+    -webkit-filter: brightness(20%);
+            filter: brightness(20%);
 
 }
 
 .custom_background_image_artist {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     color: white;
 }
 
@@ -317,8 +380,12 @@ img {
 }
 
 .custom_author_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: absolute;
     top: 120px;
     margin-left: 20px;
@@ -351,7 +418,9 @@ img {
     background-color: var(--spotify-color);
     color: white;
     font-weight: 600;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 }
 
@@ -374,7 +443,9 @@ img {
     background-color: transparent;
     color: var(--main-color);
     font-weight: 600;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 }
 
@@ -391,7 +462,9 @@ img {
     border-radius: 50px;
     border: 1px solid var(--main-color);
     background-color: transparent;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 3px 5px 6px 7px;
 
 }
