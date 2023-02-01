@@ -31,6 +31,7 @@
 .custom_nav_link {
     font-size: 1.4rem;
     background-color: transparent;
+    letter-spacing: 0.1rem;
     margin-left: 20px;
     border: none;
     color: var(--main-color);
@@ -59,11 +60,23 @@
     padding: 20px;
 }
 
-.latest_releases h3 {
+.main_content_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.6rem;
+}
+
+.main_content_container h3 {
     font-size: 1.3rem;
     letter-spacing: 0.15rem;
     color: var(--main-color);
     margin-bottom: 11px;
+}
+
+/* LATEST RELEASES */
+
+.latest_releases {
+    grid-column: 1 / span 2;
 }
 
 .latest_release_img {
@@ -92,5 +105,66 @@
 .latest_image_release {
     width: 80px;
     height: 80px;
+    object-fit: cover;
+}
+
+/* POPULAR */
+
+.custom_popular {
+    margin-top: 40px;
+}
+
+.custom_track {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-top: 1px solid var(--secondary-bg-color);
+    border-bottom: 1px solid var(--secondary-bg-color);
+}
+
+.custom_track:hover {
+    background-color: var(--secondary-bg-color);
+}
+
+.custom_track * {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.custom_track p:first-of-type {
+    margin-left: 10px;
+    color: var(--main-color);
+    margin-right: 30px;
+}
+
+.custom_track i {
+    margin-right: 30px;
+    color: var(--main-color);
+}
+
+.custom_track p:nth-last-of-type(2) {
+    margin-right: 160px;
+    color: #fff;
+}
+
+.custom_track p:last-of-type {
+    margin-left: auto;
+    margin-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--main-color);
+}
+
+.custom_track span {
+    font-size: 1rem;
+    border: 1px solid rgba(75, 74, 74, 0.744);
+    border-radius: 3px;
+    color: rgba(75, 74, 74, 0.744);
+    padding: 2px 4px;
+
+}
+
+.track_image {
+    width: 40px;
+    height: 40px;
     object-fit: cover;
 }
