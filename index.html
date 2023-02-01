@@ -239,7 +239,7 @@
                 </div>
                 <!-- END OF SIDE NAV -->
                 <!-- START OF MAIN SECTION -->
-                    <div class="col-md-8 g-0 custom_artist_column">
+                    <main class="col-md-8 g-0 custom_artist_column">
                         <img src="./images/custom_bg.png" alt="g-ezy walking" class="img-fluid custom_artist_bg_image">
                         <div class="custom_background_image_artist">
                             <div class="custom_author_info">
@@ -260,25 +260,46 @@
                                 <p>MONTHLY LISTENERS</p>
                             </div>
                         </div>
-                        <div class="row g-0 p-0 m-0">
-                            <ul class="nav nav-pills mb-3 custom_tabable" id="pills-tab" role="tablist">
+                        <div class="row m-0">
+                            <ul class="nav nav-pills custom_tabable" id="pills-tab" role="tablist">
                                 <li class="custom_link" role="presentation">
-                                  <button class="custom_nav_link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">OVERVIEW</button>
+                                  <button class="custom_nav_link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">OVERVIEW</button>
                                 </li>
                                 <li class="custom_link" role="presentation">
                                   <button class="custom_nav_link right" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">RELATED ARTISTS</button>
                                 </li>
                               </ul>
-                              <div class="tab-content custom_tab_content" id="pills-tabContent">
-                                <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">MYCONTENT IS HERE PLEASE RELATE.</div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">.aIDJOSDKADJASODIASKOl</div>
+                              <!-- OVERVIEW CONTENT -->
+                              <div class="tab-content custom_tab_content m-0 p-0" id="pills-tabContent">
+                                <div class="tab-pane fade show active custom_main_content" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                    <div class="main_content_container">
+                                        <div class="latest_releases">
+                                            <h3>LATEST RELEASE</h3>
+                                            <div class="latest_release_img">
+                                                <img src="./images/whenDarkOut.jpg" alt="latest_release" class="img-fluid latest_image_release">
+                                                <div class="track">
+                                                    <p>Drifting (Track Commentary)</p>
+                                                    <p>4 December 2015</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="related_artists">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- RELATED ARTIST CONTENT -->
+                                <div class="tab-pane fade custom_main_content" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+                                </div>
                               </div>
                         </div>
                         <!-- END OF BACKGROUND IMAGE -->
                         <!-- START OF TABS -->
                         
                         
-                    </div>
+                    </main>
 
             </div>
         </div>
