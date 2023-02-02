@@ -424,8 +424,11 @@
 
 .alot_songs p:first-of-type {
     margin: 0;
-    margin-right: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 7%;
 }
+
+
 
 .alot_songs i:first-of-type {
     margin-right: 35px;
@@ -446,6 +449,7 @@
 
 .alot_songs i:last-child {
     margin-right: 0;
+    color: var(--spotify-color);
 }
 
 .feat_author {
