@@ -75,8 +75,8 @@
     -ms-grid-columns: 1fr 1.6rem 1fr 1.6rem 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     -webkit-column-gap: 1.6rem;
-       -moz-column-gap: 1.6rem;
-            column-gap: 1.6rem;
+    -moz-column-gap: 1.6rem;
+    column-gap: 1.6rem;
 }
 
 .main_content_container h3 {
@@ -107,13 +107,14 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding: 13px;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
+
 .track p {
     font-size: 1.4rem;
     margin: 0;
@@ -130,7 +131,7 @@
     width: 80px;
     height: 80px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 /* POPULAR */
@@ -144,8 +145,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     color: #fff;
     border-top: 1px solid var(--secondary-bg-color);
     border-bottom: 1px solid var(--secondary-bg-color);
@@ -201,7 +202,7 @@
     width: 40px;
     height: 40px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 .custom_show_more {
@@ -233,8 +234,8 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     background-color: var(--secondary-bg-color);
     padding: 5px;
     margin-bottom: 2px;
@@ -258,7 +259,7 @@
     height: 45px;
     border-radius: 50px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 /* FIND FRIENDS */
@@ -340,11 +341,18 @@
 
 .album_button {
     margin-right: 10px;
+    text-align: center;
+    align-items: center;
 }
 
 .save {
     padding: 3px 20px;
     font-size: 1.2rem;
+    vertical-align: center;
+}
+
+.save:hover {
+    border-color: var(--spotify-color);
 }
 
 .list_icons {
@@ -380,3 +388,73 @@
     color: white;
 }
 
+/* ALOT OF SONGS STARTING */
+
+.songs_tags {
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-color);
+    grid-column: 1 / span 3;
+    margin-top: 25px;
+    padding: 0 10px;
+}
+
+.hash_songs {
+    font-size: 1.4rem;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.hash_songs p {
+    margin-left: 85px;
+    margin-bottom: 0;
+    letter-spacing: 0.1rem;
+}
+
+
+.songs_icons i {
+    margin-left: 50px;
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+
+.alot_songs {
+    padding: 10px
+}
+
+.alot_songs p:first-of-type {
+    margin: 0;
+    margin-right: 40px;
+}
+
+.alot_songs i:first-of-type {
+    margin-right: 35px;
+}
+
+.alot_songs p:nth-of-type(2) {
+    width: 100%;
+}
+
+.alot_songs p:nth-of-type(3) {
+    margin-right: 30px;
+    width: 15%
+}
+
+.alot_songs span {
+    margin-left: auto;
+}
+
+.alot_songs i:last-child {
+    margin-right: 0;
+}
+
+.feat_author {
+    background-color: transparent;
+    color: var(--fade-color);
+}
+
+.feat_author:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
