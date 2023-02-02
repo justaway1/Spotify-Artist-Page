@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 :root {
@@ -225,7 +232,9 @@
 /* RELATED ARTISTS */
 
 .related_artists {
+    -ms-grid-column: 3;
     grid-column: 3;
+    -ms-grid-row: 1;
     grid-row: 1;
 }
 
@@ -292,15 +301,23 @@
 }
 
 .friend_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 10px;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 /* ALBUMS */
 
 .custom_albums {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-column: 1 / span 3;
     margin-top: 40px;
 }
@@ -309,10 +326,13 @@
 .album_song {
     width: 140px;
     height: 140px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .when_its_dark {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 10px;
     border-top: 1px solid var(--secondary-bg-color);
@@ -320,9 +340,16 @@
 
 .song_info {
     margin-left: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .song_info p {
@@ -342,7 +369,9 @@
 .album_button {
     margin-right: 10px;
     text-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .save {
@@ -356,8 +385,12 @@
 }
 
 .list_icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 6px;
 }
 
@@ -391,9 +424,15 @@
 /* ALOT OF SONGS STARTING */
 
 .songs_tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     color: var(--main-color);
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
     grid-column: 1 / span 3;
     margin-top: 25px;
     padding: 0 10px;
@@ -401,6 +440,8 @@
 
 .hash_songs {
     font-size: 1.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 10px;
 }
