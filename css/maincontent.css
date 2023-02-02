@@ -19,6 +19,8 @@
     background-color: var(--bg-color);
 }
 
+
+
 .custom_tabable {
     position: absolute;
     z-index: 1;
@@ -257,6 +259,7 @@
 /* FIND FRIENDS */
 
 .find_friends_column {
+    margin-left: -5px;
     color: var(--main-color);
     background-color: rgb(12, 12, 12);
 }
