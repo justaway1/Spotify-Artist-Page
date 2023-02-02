@@ -253,3 +253,38 @@
     -o-object-fit: cover;
        object-fit: cover;
 }
+
+/* FIND FRIENDS */
+
+.find_friends_column {
+    color: var(--main-color);
+    background-color: rgb(12, 12, 12);
+}
+
+.friend {
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.friend:hover {
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+}
+
+.friend i:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.friend i {
+    margin-right: 10px;
+}
+
+.friend_button {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
