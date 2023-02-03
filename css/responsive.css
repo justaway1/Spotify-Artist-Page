@@ -35,17 +35,14 @@
         margin-top: 20px;
     }
 
-    /* .custom_collapse_column {
-        display: flex;
-        flex-direction: row;
-        z-index: 5;
-        overflow: auto;
-        height: 500px;
-    } */
+   
 
-    .custom_collapse_container {
-        display: flex;
+    .custom_collapse_column {
+        height: auto;
+        max-height: 0;
+        display: none;
     }
+
 
     /* .new_playlist_separator {
         position: relative;
@@ -54,14 +51,16 @@
 
     .custom_artist_column {
         max-width: 100%;
-        overflow: hidden;
+        overflow: auto;
         width: 100vw;
         height: 100vh;
     }
 
-    .custom_collapse_column{
-        display: none;
+    .new_playlist_separator .author_song {
+        position: relative;
+        z-index: 0;
     }
+
 
     .image_author_song .author_song{
         margin-right: auto;
