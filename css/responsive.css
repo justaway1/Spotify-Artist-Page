@@ -59,6 +59,62 @@
         height: 100vh;
     }
 
+    .image_author_song .author_song{
+        margin-right: auto;
+        margin-left: 20px;
+    }
+
+    .new_playlist_separator .new_playlist{
+        display: none;
+    }
+
+    .check {
+        margin-right: 20px;
+    }
+
+
+    .montly_listeners p {
+        display: none;
+    }
+
+    .artist_dots {
+        display: none;
+    }
+
+    .main_content_container .latest_releases {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    }
+
+    .main_content_container .related_artists {
+        grid-row: 2;
+        margin-top: 20px;
+        grid-column: 1 / span 3;
+    }
+    .main_content_container .related_artists .artists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+
+    }
+
+    .songs_tags .songs_icons i:last-of-type {
+        display: none;
+    }
+    .custom_track.alot_songs p:first-of-type {
+        margin-right: 20px;
+    }
+
+    .custom_track.alot_songs i:last-of-type {
+        display: none;
+    }
+    .custom_track.alot_songs p:nth-of-type(3) {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .custom_track.alot_songs {
+        padding-right: 0;
+    }
 
     .custom_artist_column .custom_artist_bg_image {
         width: 100%;
