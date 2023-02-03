@@ -59,6 +59,10 @@
         height: 100vh;
     }
 
+    .custom_collapse_column{
+        display: none;
+    }
+
     .image_author_song .author_song{
         margin-right: auto;
         margin-left: 20px;
@@ -70,6 +74,15 @@
 
     .check {
         margin-right: 20px;
+    }
+
+    .custom_main_content .related_artist_tab_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .custom_main_content .related_artist_tab_section figure i {
+        display: none;
     }
 
 
