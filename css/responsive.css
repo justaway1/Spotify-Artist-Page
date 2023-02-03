@@ -136,6 +136,7 @@
         align-items: center;
         padding: 0 20px;
         margin: 0 auto;
+        width: 100%;
     }
 
     .footer_content .range_div i:first-child {
@@ -144,8 +145,8 @@
     
     .footer_content .lyrics_div {
         display: flex;
-        justify-content: space-around;
         margin-top: 20px;
+        padding: 0 20px;
         align-items: center;
         width: 100%;
     }
