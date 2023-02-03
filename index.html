@@ -90,9 +90,9 @@
         <!-- END OF HEADER SECTION -->
 
         <!-- START OF SIDE NAV -->
-        <div class="container-fluid g-0 m-0 overflow-hidden">
+        <div class="container-fluid g-0 m-0 overflow-x-hidden">
             <div class="row">
-                <div class="col-sm-2 bg-dark pt-4 ps-0 pe-0 custom_collapse_column">
+                <div class="col-sm-2 bg-dark pt-4 ps-0 pe-0 custom_collapse_column vh-100">
                     <!-- FIRST COLLAPSE -->
                     <div class="custom_collapse_container">
                         <p class="mb-1 ms-4">
@@ -577,10 +577,30 @@
                             <button type="button" class="custom_show_more">FIND FRIENDS</button>
                         </div>
                     </div>
+                </div>
             </div>
-            <div class="row w-50 mx-auto h-100 g-0 mt-5">
-                <button type="button" class="btn btn-lg btn-dark">TO BE CONTINUE...</button>
-            </div>
-        </div>
+            <footer>
+                <div class="footer_content">
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <b>0:01</b>
+                        <input type="range" min="1" max='100' value='30' class="range_button">
+                    <b>3:07</b>
+                    <p>LYRICS</p>
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <div class="devices">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <p>DEVICES AVAILABLE</p>
+                    </div>
+                    <div class="volume">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <input type="range" class="volume_range" min="1" max="100" value="90">
+                    </div>
+                </div>
+            </footer>
+        <!-- START OF FOOTER -->
     </body>
 </html>

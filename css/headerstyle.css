@@ -239,6 +239,7 @@ img {
     color: var(--main-color);
     border-top: 1.5px solid black;
     border-bottom: 1.5px solid black;
+    margin-left: 10px;
 
 
 }
@@ -274,7 +275,6 @@ img {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    height: 82vh;
 }
 
 .custom_collapse_container {

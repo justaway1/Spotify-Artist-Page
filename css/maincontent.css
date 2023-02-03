@@ -271,6 +271,7 @@
     object-fit: cover;
 }
 
+
 /* FIND FRIENDS */
 
 .find_friends_column {
@@ -320,6 +321,7 @@
     -ms-grid-column-span: 3;
     grid-column: 1 / span 3;
     margin-top: 40px;
+    height: auto;
 }
 
 
@@ -502,4 +504,109 @@
     text-decoration: underline;
     cursor: pointer;
     
+}
+
+/* FOOTER CONTENT */
+
+
+footer {
+    padding: 20px;
+    background-color: var(--bg-color);
+}
+
+.footer_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--main-color);
+}
+
+.footer_content i:first-of-type,
+.footer_content i:nth-of-type(3) {
+    font-size: 2.6rem;
+    color: var(--main-color);
+    margin-right: 12px;
+}
+
+.footer_content i:nth-of-type(1):hover,
+.footer_content i:nth-of-type(2):hover,
+.footer_content i:nth-of-type(3):hover {
+    color: white;
+    cursor: pointer;
+}
+
+.footer_content i:nth-of-type(2) {
+    font-size: 3.2rem;
+    color: var(--main-color);
+    margin-right: 12px;
+}
+
+.footer_content b {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20px;
+}
+
+.footer_content b:first-of-type {
+    margin-right: 20px;
+}
+
+.footer_content p:first-of-type {
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer_content i:nth-of-type(4),
+.footer_content i:nth-of-type(5),
+.footer_content i:nth-of-type(6) {
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.footer_content .devices {
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content .devices p {
+    font-size: 0.9rem;
+    margin: 0;
+    margin-right: 10px;
+}
+
+
+.footer_content .volume {
+    display: flex;
+    color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content .devices i {
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+
+.footer_content .volume i {
+    font-size: 1rem;
+    margin-right: 4px;
+}
+
+
+.range_button {
+    appearance: none;
+    width: 60vw;
+    height: 4px;
+    
+}
+
+.volume_range {
+    appearance: none;
+    width: 40px;
+    height: 4px;
 }
