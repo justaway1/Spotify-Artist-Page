@@ -15,10 +15,6 @@
 }
 
 
-.related_artist_tab_section img {
-    object-fit: cover;
-}
-
 figcaption {
     color: var(--main-color);
     padding: 15px;
@@ -55,4 +51,9 @@ figure:hover {
 figcaption:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.related_tab_image {
+    width: 100%;
+    object-fit: cover;
 }
