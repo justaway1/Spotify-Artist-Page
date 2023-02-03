@@ -559,11 +559,26 @@ footer {
     margin-right: 20px;
 }
 
+.footer_content p:first-of-type:hover {
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
 .footer_content i:nth-of-type(4),
 .footer_content i:nth-of-type(5),
 .footer_content i:nth-of-type(6) {
     font-size: 1.2rem;
     margin-right: 20px;
+}
+
+.footer_content i:nth-of-type(4):hover,
+.footer_content i:nth-of-type(5):hover,
+.footer_content i:nth-of-type(6):hover {
+    color: #fff;
+    cursor: pointer;
 }
 
 .footer_content .devices {
@@ -597,16 +612,34 @@ footer {
     margin-right: 4px;
 }
 
+.footer_content .devices i:hover,
+.footer_content .devices p:hover {
+    color: #fff;
+    cursor: pointer;
+}
 
 .range_button {
-    appearance: none;
+    accent-color: var(--spotify-color);
+    outline: none;
+    overflow: hidden;
     width: 60vw;
     height: 4px;
     
 }
 
+
+
+
+.range_button:hover, .volume_range:hover {
+    overflow: visible;
+}
+
+
+
 .volume_range {
-    appearance: none;
+    accent-color: var(--main-color);
+    outline: none;
+    overflow: hidden;
     width: 40px;
     height: 4px;
 }
