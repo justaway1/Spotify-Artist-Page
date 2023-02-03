@@ -8,8 +8,8 @@
             type="image/x-icon">
 
         <!-- CUSTOM MY STYLES CSS -->
-        <link rel="stylesheet" href="./css/headerstyle.css">
         <link rel="stylesheet" href="./css/responsive.css">
+        <link rel="stylesheet" href="./css/headerstyle.css">
         <link rel="stylesheet" href="./css/related_artist.css">
         <link rel="stylesheet" href="./css/maincontent.css">
 
@@ -58,10 +58,12 @@
                                 <i class="fa-solid fa-bell custom_person_icon"></i>
                                 <i class="fa-solid fa-cloud-arrow-down
                                     custom_person_icon"></i>
-                                <img src="./images/Неозаглавен дизайн.png"
-                                    alt="profile_picture" class="img-fluid
-                                    profile_picture">
-                                <p class="person_profile mb-0 me-5">Stan Angelov</p>
+                                    <div class="d-flex align-items-center">
+                                        <img src="./images/Неозаглавен дизайн.png"
+                                        alt="profile_picture" class="img-fluid
+                                        profile_picture">
+                                        <p class="person_profile mb-0 me-5">Stan Angelov</p>
+                                    </div>
                                 <div class="dropdown">
                                     <button class="btn border-0" type="button"
                                         id="triggerId" data-bs-toggle="dropdown"
@@ -93,7 +95,7 @@
         <!-- START OF SIDE NAV -->
         <div class="container-fluid g-0 m-0 overflow-x-hidden">
             <div class="row">
-                <div class="col-sm-2 bg-dark pt-4 ps-0 pe-0 custom_collapse_column vh-100">
+                <div class="col-sm-12 col-md-2 bg-dark pt-4 ps-0 pe-0 custom_collapse_column">
                     <!-- FIRST COLLAPSE -->
                     <div class="custom_collapse_container">
                         <p class="mb-1 ms-4">
@@ -240,7 +242,7 @@
                 </div>
                 <!-- END OF SIDE NAV -->
                 <!-- START OF MAIN SECTION -->
-                    <main class="col-md-8 g-0 custom_artist_column">
+                    <main class="col-md-10 col-xl-10 col-xxl-8 g-0 custom_artist_column">
                         <img src="./images/custom_bg.png" alt="g-ezy walking" class="img-fluid custom_artist_bg_image">
                         <div class="custom_background_image_artist">
                             <div class="custom_author_info">
