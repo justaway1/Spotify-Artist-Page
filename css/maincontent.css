@@ -517,29 +517,52 @@ footer {
 .footer_content {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     color: var(--main-color);
 }
 
-.footer_content i:first-of-type,
-.footer_content i:nth-of-type(3) {
+.range_div {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_content .range_div i:first-of-type {
     font-size: 2.6rem;
-    color: var(--main-color);
-    margin-right: 12px;
+    margin-right: 10px;
 }
 
-.footer_content i:nth-of-type(1):hover,
-.footer_content i:nth-of-type(2):hover,
-.footer_content i:nth-of-type(3):hover {
-    color: white;
+.footer_content .range_div i:nth-of-type(2) {
+    font-size: 3rem;
+    margin-right: 10px;
+}
+.footer_content .range_div i:nth-of-type(3) {
+    font-size: 2.6rem;
+}
+
+.footer_content .range_div i:nth-of-type(1):hover,
+.footer_content .range_div i:nth-of-type(2):hover,
+.footer_content .range_div i:nth-of-type(3):hover {
     cursor: pointer;
+    color: white;
 }
 
-.footer_content i:nth-of-type(2) {
-    font-size: 3.2rem;
-    color: var(--main-color);
-    margin-right: 12px;
+
+.footer_content .lyrics_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.rem;
 }
+
+.footer_content .lyrics_div i:nth-of-type(1):hover,
+.footer_content .lyrics_div i:nth-of-type(2):hover,
+.footer_content .lyrics_div i:nth-of-type(3):hover {
+    cursor: pointer;
+    color: white;
+}
+
+
 
 .footer_content b {
     color: var(--main-color);
@@ -552,31 +575,9 @@ footer {
     margin-right: 20px;
 }
 
-.footer_content p:first-of-type {
-    font-size: 1rem;
-    margin-bottom: 0;
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
 .footer_content p:first-of-type:hover {
     text-decoration: underline;
-    color: #fff;
-    cursor: pointer;
-}
-
-
-
-.footer_content i:nth-of-type(4),
-.footer_content i:nth-of-type(5),
-.footer_content i:nth-of-type(6) {
-    font-size: 1.2rem;
-    margin-right: 20px;
-}
-
-.footer_content i:nth-of-type(4):hover,
-.footer_content i:nth-of-type(5):hover,
-.footer_content i:nth-of-type(6):hover {
     color: #fff;
     cursor: pointer;
 }
@@ -602,21 +603,8 @@ footer {
     align-items: center;
 }
 
-.footer_content .devices i {
-    font-size: 1.1rem;
-    margin-right: 5px;
-}
 
-.footer_content .volume i {
-    font-size: 1rem;
-    margin-right: 4px;
-}
 
-.footer_content .devices i:hover,
-.footer_content .devices p:hover {
-    color: #fff;
-    cursor: pointer;
-}
 
 .range_button {
     accent-color: var(--spotify-color);
@@ -626,8 +614,6 @@ footer {
     height: 4px;
     
 }
-
-
 
 
 .range_button:hover, .volume_range:hover {
