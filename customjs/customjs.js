@@ -1,10 +1,16 @@
 const avatars = [
-    {
-        id: 1,
-        name: 'Hoodie Allen',
-        image: './images/hoodie.jpg',
-        bgImg: './images/hoodieBack.avif'
-    },
+  {
+    id: 1,
+    name: 'Hoodie Allen',
+    image: './images/hoodie.jpg',
+    bgImg: './images/hoodieBack.avif'
+  },
+  {
+    id: 2,
+    name: 'Mike Stud',
+    image: './images/mikeprofile.jpeg',
+    bgImg: './images/mikebg.webp'
+  },
   {
     id: 4,
     name: 'J. Cole',
