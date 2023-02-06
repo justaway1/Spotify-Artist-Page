@@ -82,10 +82,7 @@ function changeAvatars () {
 }
 
 el.forEach(element => {
-  element.addEventListener('click', scrollToTop)
   element.addEventListener('click', changeAvatars)
 })
 
-function scrollToTop () {
-  return window.scrollToTop(0)
-}
+
