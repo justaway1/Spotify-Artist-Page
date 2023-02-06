@@ -28,6 +28,24 @@ const avatars = [
     name: 'Big Sean',
     image: './images/bigseanprofile.jpg',
     bgImg: './images/bigseanbg.jpg'
+  },
+  {
+    id: 6,
+    name: 'Wiz Khalifa',
+    image: './images/wizprofile.webp',
+    bgImg: './images/wizbg.jpg'
+  },
+  {
+    id: 7,
+    name: 'Yonas',
+    image: './images/yonasprofile.jfif',
+    bgImg: './images/yonasbg.jpg'
+  },
+  {
+    id: 8,
+    name: 'G-Eazy',
+    image: './images/g_eazy_propic.jpg',
+    bgImg: './images/custom_bg.png'
   }
 ]
 
@@ -42,6 +60,7 @@ function changeAvatars () {
       author.src = avatars[i].image
       author_Id.innerHTML = `<h1>${avatars[i].name}</h1>`
       custom_bg.src = avatars[i].bgImg
+      window.scrollTo(0)
     }
   }
 }
