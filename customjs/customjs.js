@@ -12,10 +12,22 @@ const avatars = [
     bgImg: './images/mikebg.webp'
   },
   {
+    id: 3,
+    name: 'Drake',
+    image: './images/Drakeprofile.webp',
+    bgImg: './images/drakebg.jpg'
+  },
+  {
     id: 4,
     name: 'J. Cole',
-    image: './images/jcole.jpg',
+    image: './images/jcoleprofile.jpg',
     bgImg: './images/jColeBACKGROUND.jpeg'
+  },
+  {
+    id: 5,
+    name: 'Big Sean',
+    image: './images/bigseanprofile.jpg',
+    bgImg: './images/bigseanbg.jpg'
   }
 ]
 
