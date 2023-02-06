@@ -7,3 +7,4 @@ Tech Used:
 **HTML5**
 **CSS3**
 **Bootstrap**
+& JavaScript
